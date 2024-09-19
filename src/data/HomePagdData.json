@@ -135,42 +135,6 @@
       }
     ]
   },
-  "service": {
-    "sectionHeading": {
-      "miniTitle": "SERVICES",
-      "title": "Design <span>services</span> I am providing"
-    },
-    "allService": [
-      {
-        "imgUrl": "/images/service-01.jpg",
-        "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:brush-fill",
-        "ratings": 5
-      },
-      {
-        "imgUrl": "/images/service-02.jpg",
-        "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:code-square",
-        "ratings": 4.5
-      },
-      {
-        "imgUrl": "/images/service-03.jpg",
-        "title": "SEO Marketing",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:speedometer2",
-        "ratings": 5
-      },
-      {
-        "imgUrl": "/images/service-04.jpg",
-        "title": "Graphic Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:palette",
-        "ratings": 5
-      }
-    ]
-  },
   "experience": {
     "sectionHeading": {
       "miniTitle": "Experience",

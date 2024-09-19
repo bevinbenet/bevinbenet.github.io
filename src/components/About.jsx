@@ -7,7 +7,7 @@ export default function About({ data }) {
   const { imgSrc, miniTitle, title, description, funfacts, btnText, btnUrl } =
     data;
   return (
-    <section className="about-section section" id="about">
+    <section className="about-section section gray-bg" id="about">
       <div className="container">
         <div className="effect-1">
           <img

@@ -36,7 +36,7 @@ export default function Projects({ data }) {
 
   return (
     <>
-      <section className="project-section section gray-bg" id="project">
+      <section className="project-section section " id="project">
         <div className="container">
           <SectionHeading
             miniTitle={sectionHeading.miniTitle}

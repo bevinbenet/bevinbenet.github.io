@@ -73,14 +73,14 @@ export default function Header() {
           </li>
           <li>
             <ScrollLink
-              to="services"
+              to="experience"
               spy={true}
               smooth={true}
               offset={-80}
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
-              Services
+              Experience
             </ScrollLink>
           </li>
           <li>
