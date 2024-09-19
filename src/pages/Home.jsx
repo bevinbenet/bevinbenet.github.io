@@ -23,7 +23,7 @@ export default function Home() {
       <About data={about} />
       <Projects data={projects} />
       <Experience data={experience} />
-      <Testimonial data={testimonial} />
+      {/*<Testimonial data={testimonial} />*/}
       <Contact data={contact} socialData={socialBtns} />
     </>
   );
