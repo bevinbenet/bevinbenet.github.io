@@ -21,57 +21,23 @@
       "href": "https://www.linkedin.com/in/bevin-benet-08a08415b/"
     }
   ],
-  "brands": [
-    {
-      "src": "/images/brand-1.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-2.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-1.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-2.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-1.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-2.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-1.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-2.svg",
-      "alt": "Logolpsum"
-    }
-  ],
   "about": {
     "imgSrc": "/images/about-banner.png",
     "miniTitle": "About Us",
-    "title": "I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS",
-    "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    "title": "I AM AVAILABLE FOR <span>ANY CODING</span> PROJECTS",
+    "description": "I am a professional developer with experience in this field. I can create any website, web application or AI related project. I am also a data science student and a martial artist. I love to solve problems and learn new things. I am always available for any coding projects. Feel free to contact me. Currently I a studying about Strapi framework and also finetuning LLMs",
     "funfacts": [
       {
-        "title": "Google Review",
-        "number": 280
+        "title": "Papers Published",
+        "number": 1
       },
       {
-        "title": "Years Experience",
-        "number": 15
+        "title": "Projects",
+        "number": 5
       },
       {
-        "title": "Awward Winning",
-        "number": 49
+        "title": "Work Experience",
+        "number": 2
       }
     ],
     "btnText": "Get in touch",

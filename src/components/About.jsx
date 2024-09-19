@@ -66,21 +66,6 @@ export default function About({ data }) {
                   </div>
                 ))}
               </div>
-              <div className="btn-bar">
-                <ScrollLink
-                  to={btnUrl}
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={300}
-                  className="px-btn"
-                >
-                  <span>{btnText}</span>{' '}
-                  <i>
-                    <Icon icon="bi:arrow-right" />
-                  </i>
-                </ScrollLink>
-              </div>
             </div>
           </div>
         </div>
