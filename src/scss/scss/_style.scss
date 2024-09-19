@@ -239,6 +239,11 @@ a {
       display: none;
     }
   }
+  .about-banner{
+    @include down-md {
+      display: none;
+    }
+  }
   .about-text {
     .section-heading {
       margin-bottom: 25px;
