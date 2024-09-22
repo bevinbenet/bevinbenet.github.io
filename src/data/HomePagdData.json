@@ -51,11 +51,11 @@
     "allProjects": [
       {
         "thumbUrl": "/images/popup-project-1.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "title": "Kata Sensei",
+        "subTitle": "Research Paper, Computer Vision",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "title": "Kata Sensei",
+          "description": "It is a research paper that i have presented at ICAECT 2023 conference at Sacred Heart College, Thevara, Kerala, India.<br><br>It ",
           "type": "Website",
           "langages": "PHP, HTML, CSS, JS",
           "platform": "WordPress",
