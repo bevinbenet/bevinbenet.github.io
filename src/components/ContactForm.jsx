@@ -9,39 +9,39 @@ export default function ContactForm() {
     message: '',
   });
 
-  // Handler for input field changes
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData(prevFormData => ({
+    setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
   };
 
-  const onSubmit = async event => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    const formData = new FormData(event.target);
 
-    formData.append('access_key', '6d7bc3fc-6190-43c5-8298-89ac5ef7494f');
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch('https://api.web3forms.com/submit', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwX4wvaidgPIKLNURom-d-5d9KRWtPdjRAKc8SRxx2w3CFpAixsFFhBiDgOH86iuO8zkg/exec', {
+      // Replace YOUR_SCRIPT_URL with the Apps Script deployment URL
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
       },
-      body: json,
-    }).then(res => res.json());
+      body: JSON.stringify(formData),
+    });
 
-    if (res.success) {
+    const result = await response.json();
+
+    if (result.success) {
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setLoading(false);
+      alert('Message sent successfully!');
+    } else {
+      alert('Failed to send the message. Please try again.');
     }
+
+    setLoading(false);
   };
+
   return (
     <form id="contact-form" onSubmit={onSubmit}>
       <div className="row gx-3 gy-4">
@@ -89,7 +89,7 @@ export default function ContactForm() {
         </div>
         <div className="col-md-12">
           <div className="form-group">
-            <label className="form-label">Your message</label>
+            <label className="form-label">Your Message</label>
             <textarea
               name="message"
               placeholder="Your message *"
@@ -106,6 +106,7 @@ export default function ContactForm() {
             <button
               className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
               type="submit"
+              disabled={loading}
             >
               {loading ? 'Sending...' : 'Send Message'}
             </button>

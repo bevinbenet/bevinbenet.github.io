@@ -76,37 +76,37 @@
         "details": "A mix of skills to tackle anything: <b>Arduino</b>,<b>Android Studio</b>, <b>PowerPoint</b>, <b>Cloud Computing</b>, <b>Git</b>, <b>teaching</b>, and <b>training</b>"
       },
       {
-        "thumbUrl": "/images/popup-project-6.jpg",
+        "thumbUrl": "/images/wordpress.jpeg",
         "category": "Certifications",
         "title": "Introduction to WordPress",
         "details": "Certified by Udemy."
       },
       {
-        "thumbUrl": "/images/popup-project-6.jpg",
+        "thumbUrl": "/images/arduino.jpeg",
         "category": "Certifications",
         "title": "Interfacing with the Arduino",
         "details": "Awarded by the University of California, Irvine (Coursera Certificate)."
       },
       {
-        "thumbUrl": "/images/popup-project-2.jpg",
+        "thumbUrl": "/images/similrity.jpeg",
         "category": "Publications",
         "title": "Similarity Score Estimation",
         "details": "Similarity Score Estimation of Kata Movement in Martial Arts Using LSTM and DTW presented at ICAECT 2023, Sacred Heart College.(<a href=\"https://books.google.co.in/books?id=zbzREAAAQBAJ&newbks=0&printsec=frontcover&pg=PA29&dq=ICAECT+2023+thevara&hl=en&source=newbks_fb&redir_esc=y#v=onepage&q=ICAECT%202023%20thevara&f=false\" class=\"card-link\">Google Book</a>)"
       },
       {
-        "thumbUrl": "/images/popup-project-2.jpg",
+        "thumbUrl": "/images/privacy.jpeg",
         "category": "Publications",
         "title": "Privacy Preserving ML(Review Paper)",
         "details": "Privacy Preserving Machine Learning: A Study on the Methods and Trends presented at VIGYAAN’22, NIMIT, Thrissur."
       },
       {
-        "thumbUrl": "/images/popup-project-3.jpg",
+        "thumbUrl": "/images/gpu.jpeg",
         "category": "Workshops",
         "title": "GPU Programming",
         "details": "GPU Programming and Distributed Deep Learning with PyTorch organized by the Department of Computer Science, CUSAT."
       },
       {
-        "thumbUrl": "/images/popup-project-4.jpg",
+        "thumbUrl": "/images/grafana.jpeg",
         "category": "Workshops",
         "title": "Building Interactive Dashboards with Grafana",
         "details": "Workshop at DevFest 2024, organized by Google Developer Groups, Cochin."
