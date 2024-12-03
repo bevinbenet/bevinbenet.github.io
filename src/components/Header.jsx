@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header() {
+
   const [mobileToggle, setMobileToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -95,20 +96,20 @@ export default function Header() {
               Contact
             </ScrollLink>
           </li>
+          <li className='no-mobile'>
+          <a 
+          href="/images/cv.pdf" 
+          download 
+          onClick={() => setMobileToggle(false)}>
+           Download CV
+          </a>
+          </li>
         </ul>
         {/* Top Menu */}
         <div className="d-flex">
-          <ScrollLink
-            to="contactus"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            onClick={() => setMobileToggle(false)}
-            className="px-btn d-none d-lg-inline-flex"
-          >
-            Lets' Talk
-          </ScrollLink>
+        <a href="/images/cv.pdf" className="px-btn d-none d-lg-inline-flex" download onClick={() => setMobileToggle(false)}>
+        Download CV
+        </a>
           <button
             className="toggler-menu d-lg-none"
             onClick={() => setMobileToggle(!mobileToggle)}

@@ -5,20 +5,25 @@
     "heading": "I’m Bevin Benet",
     "typingText": ["I'm a Coder", 1500, "I'm a Developer", 1500],
     "description": "I love solving problems. Trying to learn new things always. Data Science Student, Martial Artist, and a Tech Enthusiast.",
-    "btnText": "Get in touch",
-    "btnUrl": "contactus"
+    "btnText": "Curriculum Vitae",
+    "btnUrl": "/images/cv.pdf"
   },
   "socialBtns": [
     {
-      "icon": "fa-brands:facebook-f",
-      "iconBgClass": "facebook",
-      "href": "https://www.facebook.com/bevinbenetbevera"
+      "icon": "fa-brands:github",
+      "iconBgClass": "github",
+      "href": "https://github.com/bevinbenet"
     },
     { "icon": "fa-brands:instagram", "iconBgClass": "instagram", "href": "https://www.instagram.com/bevinbenet/?__d=1" },
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
       "href": "https://www.linkedin.com/in/bevin-benet-08a08415b/"
+    },
+    {
+      "icon": "fa-brands:medium",
+      "iconBgClass": "medium",
+      "href": "https://medium.com/@bevinbenet"
     }
   ],
   "about": {
@@ -248,7 +253,7 @@
       "title": "Let’s Discuss Your Project",
       "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
     },
-    "contactImg": "/images/contact-us.png",
+    "contactImg": "/images/contact.jpeg",
     "contactInfo": [
       { "title": "Write an e-mail", "email": "bevinbenet@gmail.com" },
       { "title": "Give a Call", "tel": "+91 90743 32091" }
