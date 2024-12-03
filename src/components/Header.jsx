@@ -28,7 +28,7 @@ export default function Header() {
       <div className="container">
         <div className="hs-text-box">
         <h6 data-aos="fade-up" data-aos-duration="1200">
-        <span style={{background: "rgba(var(--px-theme-rgb), 0.2)",borderRadius: "4px",padding: "5px 12px",display: "inline-block",color: "var(--px-white)",fontWeight: 400,fontSize: "16px",lineHeight: "20px",letterSpacing: "4px",textTransform: "uppercase"}}>
+        <span style={{background: "var(--px-theme)",borderRadius: "4px",padding: "5px 12px",display: "inline-block",color: "var(--px-white)",fontWeight: 400,fontSize: "16px",lineHeight: "20px",letterSpacing: "4px",textTransform: "uppercase"}}>
           Bevin Benet
         </span>
         </h6>
