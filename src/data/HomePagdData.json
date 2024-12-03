@@ -1,6 +1,6 @@
 {
   "hero": {
-    "imgUrl": "/images/home-banner.png",
+    "imgUrl": "/images/home-banner.jpeg",
     "name": "Bevin Benet",
     "heading": "I’m Bevin Benet",
     "typingText": ["I'm a Coder", 1500, "I'm a Developer", 1500],
@@ -250,8 +250,8 @@
     },
     "contactImg": "/images/contact-us.png",
     "contactInfo": [
-      { "title": "Write an e-mail", "email": "sample@domain.com" },
-      { "title": "write an e-mail", "tel": "+044 9696 9696 3636" }
+      { "title": "Write an e-mail", "email": "bevinbenet@gmail.com" },
+      { "title": "Give a Call", "tel": "+91 90743 32091" }
     ]
   }
 }
