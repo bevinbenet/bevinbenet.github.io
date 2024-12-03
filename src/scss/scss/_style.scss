@@ -172,6 +172,18 @@ a {
   z-index: 1;
   padding-top: 150px;
   margin-bottom:100px;
+  .imageHome{
+    width: 600px;
+    height: 600px;
+    display: block; // Center horizontally if needed
+    margin: 0 auto; // Center horizontally
+    border-radius: 25px; // Optional: Add rounded corners
+    @include down-md {
+      width: 500px;
+      height: 350px;
+      border-radius: 25px;
+    }
+  }
   @include down-md {
     padding-top: 130px;
   }
@@ -238,17 +250,20 @@ a {
     .btn-bar {
       padding-top: 15px;
     }
+    
   }
 }
 
 /* ----------------------
 *   About
 ---------------------------*/
+
 .about-section {
   overflow: hidden;
   .container {
     position: relative;
     z-index: 1;
+    
   }
   .effect-1 {
     position: absolute;
@@ -272,9 +287,7 @@ a {
   }
   .about-banner{
     align-items: center;
-    @include down-md {
-      display: none;
-    }
+    
   }
   .about-text {
     .section-heading {
@@ -338,6 +351,11 @@ a {
     }
 
   }
+  @include down-md {
+    justify-content:stretch;
+    padding-bottom: 2px;
+    overflow-y: scroll;  
+  }
  }
 
  .navigation-buttons {
@@ -375,6 +393,10 @@ a {
   margin-left: 80px;
   align-content: center;
   position: relative; /* Add this line */
+  @include down-md {
+    margin-left: 20px;
+  }
+
 
 
   .skill-media {

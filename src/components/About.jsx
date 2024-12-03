@@ -22,13 +22,15 @@ export default function About({ data }) {
       {
         breakpoint: 768, // Tablet view
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1, // Slides to scroll per click
         },
       },
       {
         breakpoint: 576, // Mobile view
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1, // Slides to scroll per click
         },
       },
     ],

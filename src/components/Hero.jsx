@@ -80,13 +80,8 @@ export default function Hero({ data, socialData }) {
               src={imgUrl}
               title
               alt="Admin"
-              style={{
-                width: '600px', // Adjust the width
-                height: '600px', // Adjust the height
-                display: 'block', // Center horizontally if needed
-                margin: '0 auto', // Center horizontally
-                borderRadius: '25px', // Optional: Add rounded corners
-              }}
+              className='imageHome'
+              
             />
           </div>
         </div>
