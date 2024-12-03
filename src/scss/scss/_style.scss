@@ -59,6 +59,7 @@ a {
   font-size: 0px;
   padding-top: 10px;
   padding-right: 30px;
+  position: relative;
   li {
     display: inline-block;
     vertical-align: top;
@@ -153,6 +154,7 @@ a {
 
 .slick-track {
   display: flex;       /* Make slides align in a row */
+  justify-content: center;
   gap: 10px;           /* Optional: Add spacing between slides */
 }
 
@@ -182,10 +184,26 @@ a {
       width: 500px;
       height: 350px;
       border-radius: 25px;
+      
     }
   }
   @include down-md {
+    margin-bottom:0px;
     padding-top: 130px;
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .col-lg-6:nth-child(2) {
+      order: -1; /* Move the image above the text */
+    }
+  
+    .col-lg-6:nth-child(1) {
+      padding-top: 20px;
+      order: 1; /* Ensure text comes after the image */
+    }
+    
   }
 
   .hs-text-box {
@@ -265,6 +283,23 @@ a {
     z-index: 1;
     
   }
+  @include down-md {
+    margin-bottom:0px;
+    padding-top: 50px;
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about-banner:nth-child(2) {
+      order: -1; /* Move the image above the text */
+    }
+  
+    .col-lg-6:nth-child(1) {
+      padding-top: 0px;
+      order: 1; /* Ensure text comes after the image */
+    }
+  }
   .effect-1 {
     position: absolute;
     bottom: -50px;
@@ -288,6 +323,7 @@ a {
   .about-banner{
     align-items: center;
     
+    
   }
   .about-text {
     .section-heading {
@@ -300,7 +336,7 @@ a {
   .review-box {
     display: flex;
     padding-top: 15px;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
     .r-box {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -354,6 +390,7 @@ a {
   @include down-md {
     justify-content:stretch;
     padding-bottom: 2px;
+    padding-top: 5px;
     overflow-y: scroll;  
   }
  }
@@ -364,6 +401,9 @@ a {
   position: relative;
   margin-top: -10px;
   gap:10px;
+  @include down-md {
+    display: none;
+  }
  }
 
 .cards-container {
@@ -374,6 +414,7 @@ a {
 .parent-div {
   display: flex;
   justify-content: center; /* Center horizontally */
+  justify-self: center;
   align-items: center; /* Center vertically */
 }
 .card-desc{
@@ -394,7 +435,7 @@ a {
   align-content: center;
   position: relative; /* Add this line */
   @include down-md {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
 

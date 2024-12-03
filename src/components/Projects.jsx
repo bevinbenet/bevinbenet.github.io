@@ -103,14 +103,7 @@ export default function Projects({ data }) {
             </Slider>
 
             {/* Navigation Buttons Below Slider */}
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '20px',
-                gap: '10px',
-              }}
-            >
+            <div className='navigation-buttons'>
               <button
                 onClick={() => sliderRef.current.slickPrev()} // Previous slide
                 className='sliderBtn'

@@ -32,6 +32,9 @@
   padding-bottom: 20px;
   transition: ease all 0.35s;
   background-color: white;
+  @include down-md {
+    box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+  }
   &.fixed-header {
     background-color: white;
     box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
