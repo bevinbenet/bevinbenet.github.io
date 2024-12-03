@@ -13,10 +13,12 @@ export default function Hero({ data, socialData }) {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="hs-text-box">
+              {/*
               <h6 data-aos="fade-up" data-aos-duration="1200">
                 <span>{name}</span>
               </h6>
-
+              */}
+              
               <h1
                 data-aos="fade-up"
                 data-aos-duration="1200"
@@ -24,7 +26,7 @@ export default function Hero({ data, socialData }) {
               >
                 {heading}
               </h1>
-              {/*}
+              {/*       
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1200"
@@ -36,7 +38,7 @@ export default function Hero({ data, socialData }) {
                   repeat={Infinity}
                 />
               </h2>
-              */}
+             */}
               <p
                 className="text"
                 data-aos="fade-up"
@@ -45,6 +47,7 @@ export default function Hero({ data, socialData }) {
               >
                 {description}
               </p>
+             
               <div
                 className="btn-bar d-flex align-items-sm-center flex-column flex-sm-row"
                 data-aos="fade-up"
@@ -72,11 +75,22 @@ export default function Hero({ data, socialData }) {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="hs-banner">
-              <img src={imgUrl} title alt="Admin" />
-            </div>
+          <div className="hs-banner">
+            <img
+              src={imgUrl}
+              title
+              alt="Admin"
+              style={{
+                width: '600px', // Adjust the width
+                height: '600px', // Adjust the height
+                display: 'block', // Center horizontally if needed
+                margin: '0 auto', // Center horizontally
+                borderRadius: '25px', // Optional: Add rounded corners
+              }}
+            />
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

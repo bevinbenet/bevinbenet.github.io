@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-$px-font: 'Space Grotesk', sans-serif !default;
+
+$px-font: 'Inter', 'Inter Placeholder', sans-serif !default;
 
 // Theme Variable
 
 $px-theme: #0788ff;
 $px-theme-rgb: 7, 136, 255;
-$px-white: #fff;
+$px-white: #ffffff;
 $px-black: #040c16;
 
 $px-text: #707476;
-$px-heading: #fff;
+$px-heading: #000000;
 
 // Breakpoints
 $px-media-xsm: 567px !default;

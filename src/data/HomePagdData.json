@@ -41,94 +41,152 @@
       }
     ],
     "btnText": "Get in touch",
-    "btnUrl": "contactus"
+    "btnUrl": "contactus",
+    "achievements": {
+    "categories": ["Skills", "Certifications", "Publications", "Workshops"],
+    "items": [
+      {
+        "thumbUrl": "/images/language.jpeg",
+        "category": "Skills",
+        "title": "Languages",
+        "details": "I can fluently juggle between <b>English</b>, <b>Malayalam</b>, and <b>Hindi</b>—language skills leveled up!"
+      },
+      {
+        "thumbUrl": "/images/coding.jpeg",
+        "category": "Skills",
+        "title": "Coding",
+        "details": "I code fluently in <b>Python</b>, <b>C</b>, <b>C++</b>, <b>R</b>, <b>Kotlin</b>, and <b>PHP</b>—consider these my superpowers!"
+      },
+      {
+        "thumbUrl": "/images/database.jpeg",
+        "category": "Skills",
+        "title": "Databases",
+        "details": "I juggle databases like a pro: <b>MySQL</b>, <b>PostgreSQL</b>, <b>SQLite</b>, and <b>MongoDB</b>—pick your favorite, and I’ve got it covered! "
+      },
+      {
+        "thumbUrl": "/images/web.jpeg",
+        "category": "Skills",
+        "title": "Web Development",
+        "details": "I'm your go-to for web magic: <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>WordPress</b>, <b>Strapi</b>, <b>ReactJS</b>, <b>NodeJS</b>, and <b>jQuery</b>—let's bring ideas to life online!"
+      },
+      {
+        "thumbUrl": "/images/misc.jpeg",
+        "category": "Skills",
+        "title": "Miscellaneous",
+        "details": "A mix of skills to tackle anything: <b>Arduino</b>,<b>Android Studio</b>, <b>PowerPoint</b>, <b>Cloud Computing</b>, <b>Git</b>, <b>teaching</b>, and <b>training</b>"
+      },
+      {
+        "thumbUrl": "/images/popup-project-6.jpg",
+        "category": "Certifications",
+        "title": "Introduction to WordPress",
+        "details": "Certified by Udemy."
+      },
+      {
+        "thumbUrl": "/images/popup-project-6.jpg",
+        "category": "Certifications",
+        "title": "Interfacing with the Arduino",
+        "details": "Awarded by the University of California, Irvine (Coursera Certificate)."
+      },
+      {
+        "thumbUrl": "/images/popup-project-2.jpg",
+        "category": "Publications",
+        "title": "Similarity Score Estimation",
+        "details": "Similarity Score Estimation of Kata Movement in Martial Arts Using LSTM and DTW presented at ICAECT 2023, Sacred Heart College.(<a href=\"https://books.google.co.in/books?id=zbzREAAAQBAJ&newbks=0&printsec=frontcover&pg=PA29&dq=ICAECT+2023+thevara&hl=en&source=newbks_fb&redir_esc=y#v=onepage&q=ICAECT%202023%20thevara&f=false\" class=\"card-link\">Google Book</a>)"
+      },
+      {
+        "thumbUrl": "/images/popup-project-2.jpg",
+        "category": "Publications",
+        "title": "Privacy Preserving ML(Review Paper)",
+        "details": "Privacy Preserving Machine Learning: A Study on the Methods and Trends presented at VIGYAAN’22, NIMIT, Thrissur."
+      },
+      {
+        "thumbUrl": "/images/popup-project-3.jpg",
+        "category": "Workshops",
+        "title": "GPU Programming",
+        "details": "GPU Programming and Distributed Deep Learning with PyTorch organized by the Department of Computer Science, CUSAT."
+      },
+      {
+        "thumbUrl": "/images/popup-project-4.jpg",
+        "category": "Workshops",
+        "title": "Building Interactive Dashboards with Grafana",
+        "details": "Workshop at DevFest 2024, organized by Google Developer Groups, Cochin."
+      }
+
+    ]
+  }
   },
   "projects": {
     "sectionHeading": {
-      "miniTitle": "My Work",
+      "miniTitle": "My Works",
       "title": "RECENT PROJECT"
     },
     "allProjects": [
       {
-        "thumbUrl": "/images/popup-project-1.jpg",
-        "title": "Kata Sensei",
-        "subTitle": "Research Paper, Computer Vision",
+        "thumbUrl": "/images/quest-ai.jpeg",
+        "title": "Quest AI",
+        "subTitle": "Web Application, LLM, OCR",
         "details": {
-          "title": "Kata Sensei",
-          "description": "It is a research paper that i have presented at ICAECT 2023 conference at Sacred Heart College, Thevara, Kerala, India.<br><br>It ",
+          "title": "Quest AI",
+          "description": "This is a web app that leverages Optical Character Recognition (OCR) technology to extract text from textbook images. This extracted text is then fed into a generative AI model (Gemini), which tailors a question set based on user specifications. Libraries such as ReportLab facilitate the arrangement of these questions into a standardized question paper format. Users can define parameters like the number of pages, question types, quantity, and layout. This solution fills a unique niche in the educational technology landscape.",
           "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
+          "langages": "Python, HTML, CSS, JS, Django",
+          "technologies": "Large Language Model(Gemini), OCR",
           "country": "USA",
           "url": "www.example.com"
         }
       },
       {
-        "thumbUrl": "/images/popup-project-2.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "thumbUrl": "/images/smile-detector.jpeg",
+        "title": "Smile Detector",
+        "subTitle": "Python, Computer Vision",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
+          "title": "Smile Detector",
+          "description": "This is an application that takes photos when a person smiles in front of the camera. It was created in Pytorch. I uses computer vision to detect the person smililing. This phot is then converted into a cartoonised format and is returned to the user.",
+          "type": "Application",
+          "langages": "Python",
+          "technologies": "Computer Vision",
           "country": "USA",
           "url": "www.example.com"
         }
       },
       {
-        "thumbUrl": "/images/popup-project-3.jpg",
-        "title": "Dashboard Design",
-        "subTitle": "Web Design, App Design",
+        "thumbUrl": "/images/icaect2023.jpeg",
+        "title": "ICAECT 2023",
+        "subTitle": "Website",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "title": "ICAECT 2023 website",
+          "description": "This is the website that was created for ICAECT 2023, which was an international conference conducted at Sacred Heart College, Thevara. It was hosted at the college server.It was created using Wordpress.",
           "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
+          "langages": "PHP,HTML,CSS",
+          "technologies": "WordPress",
           "country": "USA",
           "url": "www.example.com"
         }
       },
       {
-        "thumbUrl": "/images/popup-project-4.jpg",
-        "title": "Mobile App Design",
-        "subTitle": "Web Design, App Design",
+        "thumbUrl": "/images/blitz24.jpeg",
+        "title": "Blitzkrieg 2024",
+        "subTitle": "Website",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "title": "Blitzkrieg 2024 Fest website",
+          "description": "This is the website that was created for blitzkrieg fest 2024 conducted by the Department of Computer Science, Sacred Heart College, Thevara. I was hosted in github.",
           "type": "Website",
           "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
+          "technologies": "Github,Git",
           "country": "USA",
           "url": "www.example.com"
         }
       },
       {
-        "thumbUrl": "/images/popup-project-5.jpg",
-        "title": "Website Design",
+        "thumbUrl": "/images/satt.jpeg",
+        "title": "SATT",
         "subTitle": "Web Design, App Design",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
-        }
-      },
-      {
-        "thumbUrl": "/images/popup-project-6.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
-        "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
+          "title": "Sacred Heart Automated Time Table Announcer",
+          "description": "It is an arduino based project thet announces the time table. It uses time RTC module, arduino UNO and speakers for announcing",
+          "type": "Arduino Project",
+          "langages": "C++",
+          "technologies": "WordPress",
           "country": "USA",
           "url": "www.example.com"
         }
@@ -142,28 +200,20 @@
     },
     "allExperience": [
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
+        "designation": "Web Developer",
+        "company": "Kirel Creations",
+        "duration": "2024 - PRESENT",
         "jobType": "Full time",
-        "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyTitle": "Kirel Creations Pvt. Ltd",
+        "companyDescription": "Kirel Creations is a branding agency that helps businesses create brands that are strong, memorable, and enduring. We understand that branding is more than just creating a logo or a website. It's about creating a holistic experience that connects with your target audience on an emotional level."
       },
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
+        "designation": "Secretary",
+        "company": "Age Friendly",
+        "duration": "2022-23",
         "jobType": "Full time",
-        "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
-      },
-      {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
-        "jobType": "Full time",
-        "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyTitle": "Age Friendly SH",
+        "companyDescription": "Age friendly is a club where the students take initiative and teach the elderly which includes computer and other language subjects. The students also conduct differerent cultural events in college for both the elderly and the other students in the college to take part in."
       }
     ]
   },

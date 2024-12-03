@@ -8,7 +8,7 @@ body {
   --bs-body-font-size: 1rem;
   --bs-body-line-height: 1.6;
   overflow-x: hidden;
-  background: black;
+  background: white;
 }
 
 a {
@@ -44,22 +44,28 @@ a {
 *   Slider 
 ---------------------------*/
 .full-width {
-  width: 95vw;
+  width: 100%; /* Make sure the container takes full width */
+  overflow: hidden; /* Avoid any overflow issues */
+  position: relative; /* Base position for proper alignment */
   .slick-dots {
     max-width: 1300px;
   }
 }
+.slider-gap-24 {
+  margin-bottom: 20px; /* Add space below the slider for dots */
+}
 .slick-dots {
   text-align: center;
   font-size: 0px;
-  padding-top: 35px;
+  padding-top: 10px;
+  padding-right: 30px;
   li {
     display: inline-block;
     vertical-align: top;
     width: 10px;
     height: 10px;
     background: transparent;
-    border: 1px solid var(--px-white);
+    border: 1px solid var(--px-black);
     transition: ease all 0.55s;
     border-radius: 8px;
     margin: 0 4px;
@@ -133,6 +139,30 @@ a {
   }
 }
 
+.slick-slider {
+  flex-direction: row; /* Ensure horizontal alignment of slides */
+  align-items: center;
+  overflow: hidden;    /* Hide overflowing content */
+
+}
+
+.slick-list {
+  overflow: hidden;    /* Prevent stacking issues */
+  display: block;
+}
+
+.slick-track {
+  display: flex;       /* Make slides align in a row */
+  gap: 10px;           /* Optional: Add spacing between slides */
+}
+
+.slick-slide {
+  float: none;         /* Remove float styles */
+  display: inline-block;
+  width: auto;         /* Let the slides adjust dynamically */
+}
+
+
 /* ----------------------
 *   Home Banner
 ---------------------------*/
@@ -141,6 +171,7 @@ a {
   overflow: hidden;
   z-index: 1;
   padding-top: 150px;
+  margin-bottom:100px;
   @include down-md {
     padding-top: 130px;
   }
@@ -156,7 +187,7 @@ a {
         border-radius: 4px;
         padding: 5px 12px;
         display: inline-block;
-        color: var(--px-white);
+        color: var(--px-black);
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
@@ -165,7 +196,7 @@ a {
       }
     }
     h1 {
-      color: var(--px-white);
+      color: var(--px-black);
       font-weight: 700;
       font-size: 70px;
       text-transform: uppercase;
@@ -196,7 +227,7 @@ a {
       font-size: 20px;
       line-height: 150%;
       letter-spacing: 0.01em;
-      color: var(--px-white);
+      color: black;
       @include down-lg {
         font-size: 18px;
       }
@@ -240,6 +271,7 @@ a {
     }
   }
   .about-banner{
+    align-items: center;
     @include down-md {
       display: none;
     }
@@ -249,7 +281,7 @@ a {
       margin-bottom: 25px;
     }
     p {
-      color: var(--px-white);
+      color: var(--px-black);
     }
   }
   .review-box {
@@ -261,7 +293,7 @@ a {
       border: 1px solid rgba(255, 255, 255, 0.15);
       display: flex;
       flex-direction: column;
-      color: var(--px-white);
+      color: var(--px-black);
       border-radius: 8px;
       padding: 20px;
       h3 {
@@ -279,8 +311,195 @@ a {
 }
 
 /* ----------------------
+*   About-Us Cards
+---------------------------*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the filter buttons horizontally */
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  gap:5px;
+  .tab{
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: var(--px-theme);
+    color: var(--px-black);
+    border: 2px solid var(--px-black);
+    transition: all 0.4s ease;
+    &:hover {
+      transform: translateY(-5px); /* Use transform for consistent results */
+    }
+
+  }
+ }
+
+ .navigation-buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -10px;
+  gap:10px;
+ }
+
+.cards-container {
+  width: 100%; /* Ensure the cards container takes full width */
+}
+
+
+.parent-div {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.card-desc{
+  color:var(--px-white);
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem); /* Similar width */
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1); /* Similar box-shadow */
+  border-radius: 1em; /* Similar border-radius */
+  border: 3px solid #040c16;
+  background: #0588FF; /* Similar background */
+  padding: 1rem; /* Adjusted padding */
+  margin-left: 80px;
+  align-content: center;
+  position: relative; /* Add this line */
+
+
+  .skill-media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      width: 100%; /* Ensure the image takes full width of the container */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+      transition: ease all 0.35s;
+      transform: scale(1);
+      border:3px solid var(--px-black);
+      border-radius: 8px;
+    }
+    .skill-gallery-link {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      cursor: pointer;
+      transition: ease all 0.35s;
+      i {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--px-black);
+        color: var(--px-black);
+        font-size: 35px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &:hover {
+    .skill-media {
+      img {
+        transform: scale(0.99);
+      }
+      .skill-gallery-link {
+        opacity: 1;
+      }
+    }
+  }
+
+  .skill-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Similar gap */
+    padding-top: 1rem; /* Adjusted padding */
+    h5 {
+      font-size: 1.5rem; /* Similar font-size */
+      text-transform: capitalize; /* Similar text-transform */
+      font-weight: 700;
+      color: var(--px-black);
+      margin: 0 0 5px;
+    }
+    .text {
+      flex: 1;
+      padding-right: 10px;
+      span {
+        font-size: 14px;
+      }
+    }
+    .link {
+      width: 50px;
+    }
+    .divider{
+      width: 100%; 
+      height: 1px; 
+      background-color: var(--px-black);
+      margin: 0px 0px 5px 0px;
+    }
+    .card-link{
+      color:var(--px-white);
+      text-decoration: underline;
+    &:hover{
+      color:blue
+    }
+    }
+  }
+  .skillCategory{
+    background: var(--px-theme);
+    border-radius: 5px;
+    padding: 5px 12px;
+    display: inline-block;
+    color: var(--px-black);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    position: absolute; /* Change from relative to absolute */
+    top: 30px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+}
+
+/* ----------------------
 *   Projects
 ---------------------------*/
+.sliderBtn{
+  width: 45px;
+   height: 45px;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   background: var(--px-theme);
+   color: var(--px-black);
+   font-size: 20px;
+   border-radius: 50%;
+   border: 2px solid var(--px-black);
+   cursor: pointer;
+   transition: all 0.4s ease;
+   &:hover {
+    transform: translateY(-5px); /* Use transform for consistent results */
+}
+}
 .project-section {
   overflow: hidden;
   .owl-stage-outer {
@@ -290,7 +509,7 @@ a {
 .project-box {
   padding: 14px;
   border-radius: 10px;
-  background: var(--px-white);
+  background: var(--px-black);
   .project-media {
     position: relative;
     overflow: hidden;
@@ -318,8 +537,8 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--px-white);
-        color: var(--px-black);
+        background: var(--px-black);
+        color: var(--px-white);
         font-size: 35px;
         border-radius: 50%;
       }
@@ -342,7 +561,7 @@ a {
     padding-top: 20px;
     h5 {
       font-weight: 700;
-      color: var(--px-black);
+      color: var(--px-white);
       font-weight: 20px;
       margin: 0 0 5px;
     }
@@ -362,19 +581,20 @@ a {
         align-items: center;
         justify-content: center;
         background: var(--px-theme);
-        color: var(--px-white);
-        font-size: 20px;
+        color: var(--px-black);
+        font-size: 30px;
         border-radius: 50%;
         border: 2px solid var(--px-black);
         cursor: pointer;
         transition: all 0.4s ease;
         &:hover {
-          background: var(--px-black);
+            transform: translateY(-5px); /* Use transform for consistent results */
         }
       }
     }
   }
 }
+
 
 /* ----------------------
 *   Services
@@ -410,13 +630,13 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--px-white);
+      color: var(--px-black);
       font-size: 22px;
       border-radius: 5px;
       margin-bottom: 20px;
     }
     p {
-      color: var(--px-white);
+      color: var(--px-black);
       font-size: 14px;
       line-height: 140%;
       opacity: 0.65;
@@ -469,21 +689,21 @@ a {
       font-weight: 400;
       font-size: 14px;
       text-transform: uppercase;
-      color: var(--px-white);
+      color: var(--px-black);
       opacity: 0.8;
     }
     p {
       font-weight: 400;
       font-size: 16px;
-      color: var(--px-white);
+      color: var(--px-black);
       text-transform: uppercase;
       margin: 0 0 15px;
     }
     label {
       padding: 8px 16px;
       border-radius: 30px;
-      background: var(--px-white);
-      color: var(--px-black);
+      background: var(--px-black);
+      color: var(--px-white);
       font-size: 12px;
       text-transform: uppercase;
       line-height: 1;
@@ -499,7 +719,7 @@ a {
       }
     }
     p {
-      color: var(--px-white);
+      color: var(--px-black);
       opacity: 0.8;
     }
   }
@@ -530,7 +750,7 @@ a {
     margin-bottom: 25px;
     font-weight: 500;
     font-size: 18px;
-    color: var(--px-white);
+    color: var(--px-black);
   }
   .t-person {
     h6 {
@@ -544,7 +764,7 @@ a {
       font-size: 16px;
       line-height: 20px;
       text-align: center;
-      color: var(--px-white);
+      color: var(--px-black);
       opacity: 0.5;
     }
   }
@@ -565,7 +785,7 @@ a {
     p {
       font-weight: 400;
       font-size: 17px;
-      color: var(--px-white);
+      color: var(--px-black);
       max-width: 550px;
       opacity: 0.85;
     }
@@ -587,14 +807,14 @@ a {
       label {
         font-weight: 400;
         font-size: 12px;
-        color: var(--px-white);
+        color: var(--px-black);
         margin: 0 0 2px;
         text-transform: uppercase;
         letter-spacing: 2px;
         opacity: 0.75;
       }
       a {
-        color: var(--px-white);
+        color: var(--px-black);
         font-size: 22px;
         font-weight: 600;
       }
@@ -606,7 +826,7 @@ a {
   }
   .contact-form {
     .form-label {
-      color: var(--px-white);
+      color: var(--px-black);
       margin: 0 0 4px;
       font-size: 12px;
       text-transform: uppercase;
@@ -616,7 +836,7 @@ a {
     .form-control {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--px-white);
+      color: var(--px-black);
       box-shadow: none;
       padding: 0.575rem 0.75rem;
       &::-webkit-input-placeholder {

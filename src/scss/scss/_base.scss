@@ -113,7 +113,7 @@ img {
       border-radius: 4px;
       padding: 5px 12px;
       display: inline-block;
-      color: var(--px-white);
+      color: var(--px-black);
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
@@ -146,7 +146,8 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  background-color: var(--px-white);
+  background-color: var(--px-black);
+  border-radius: 25px;
   position: relative;
   @include down-lg {
     padding: 18px;
@@ -162,35 +163,39 @@ img {
       }
     }
     .col-4 {
-      color: #111;
+      color: var(--px-white);
     }
   }
 }
 .mfp-close {
   position: absolute;
-  top: 0;
-  right: 0;
-  background: var(--px-gray-2);
-  color: var(--px-text);
+  top: 10px;
+  right: 10px;
+  background: var(--px-theme);
+  color: var(--px-black);
   z-index: 1;
   opacity: 1;
-  border: none;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  border-radius: 100px;
+  border: 2px solid var(--px-black);
+  width: 30px;
+  height: 30px;
+  padding:2px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
   &:hover {
-    color: red;
+    transform: translateY(-2px); /* Use transform for consistent results */
+    
   }
+  
 }
 .single-project-box {
   h4 {
     margin-bottom: 12px;
     padding-bottom: 12px;
-    color: #111;
+    color: var(--px-white);
     border-bottom: 1px solid var(--bs-border-color);
   }
 }

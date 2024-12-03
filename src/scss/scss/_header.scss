@@ -1,6 +1,6 @@
 .toggler-menu {
   background-color: transparent;
-  color: var(--px-white);
+  color: var(--px-black);
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: 5px;
   padding: 0 25px;
@@ -31,9 +31,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   transition: ease all 0.35s;
-  background-color: transparent;
+  background-color: white;
   &.fixed-header {
-    background-color: var(--px-black);
+    background-color: white;
     box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
   }
   > .container {
@@ -66,10 +66,11 @@
       @include down-md {
         padding: 8px 0;
       }
+      
       a {
         padding: 8px 0;
         text-transform: uppercase;
-        color: var(--px-white);
+        color: black;
         font-size: 14px;
         letter-spacing: 1px;
         font-weight: 500;
@@ -77,8 +78,9 @@
         cursor: pointer;
         transition: all 0.4s ease;
         &:hover {
-          color: var(--px-white);
+          color: #1977F2;
         }
+        
         &:after {
           content: '';
           position: absolute;
