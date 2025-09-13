@@ -30,7 +30,7 @@
     "imgSrc": "/images/about-banner.png",
     "miniTitle": "About Me",
     "title": "I AM AVAILABLE FOR <span>ANY CODING</span> PROJECTS",
-    "description": "I am a professional developer with experience in this field. I can create any website, web application or AI related project. I am also a data science student and a martial artist. I love to solve problems and learn new things. I am always available for any coding projects. Feel free to contact me. Currently I a studying about Strapi framework and also finetuning LLMs",
+    "description": "I am a professional developer with experience in this field. I can create any website, web application or AI related project. I am also a data science student and a martial artist. I love to solve problems and learn new things. I am always available for any coding projects. Feel free to contact me. Currently working on Agentic AI projects.",
     "funfacts": [
       {
         "title": "Papers Published",
@@ -50,6 +50,12 @@
     "achievements": {
     "categories": ["Skills", "Certifications", "Publications", "Workshops"],
     "items": [
+      {
+        "thumbUrl": "/images/web.jpeg",
+        "category": "Skills",
+        "title": "Agentic AI",
+        "details": "Expert in setting up agentic AI systems: <b>Open AI SDK</b>, <b>Langraph</b>, <b>Crew AI</b> — Currently exploring the frontiers of AI!"
+      },
       {
         "thumbUrl": "/images/language.jpeg",
         "category": "Skills",
@@ -79,6 +85,12 @@
         "category": "Skills",
         "title": "Miscellaneous",
         "details": "A mix of skills to tackle anything: <b>Arduino</b>,<b>Android Studio</b>, <b>PowerPoint</b>, <b>Cloud Computing</b>, <b>Git</b>, <b>teaching</b>, and <b>training</b>"
+      },
+      {
+        "thumbUrl": "/images/wordpress.jpeg",
+        "category": "Certifications",
+        "title": "Agentic AI",
+        "details": "Certified by Udemy."
       },
       {
         "thumbUrl": "/images/wordpress.jpeg",
